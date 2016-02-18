@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>mbyte</title>
+ <link href="http://mbyte.cc/atom.xml" rel="self"/>
+ <link href="http://mbyte.cc/"/>
+ <updated>2013-05-12T23:51:26+08:00</updated>
+ <id>http://mbyte.cc/</id>
+ <author>
+   <name>mbyte</name>
+   <email>yanhonglei@gmail.com</email>
+ </author>
+ 
+ 
+ <entry>
+   <title>Welcome to GitHub Pages</title>
+   <link href="http://mbyte.cc/blog/2013/05/12/Welcoe-to-GitHub-Pages.html"/>
+   <updated>2013-05-12T00:00:00+08:00</updated>
+   <id>mbyte.cc/blog/2013/05/12/Welcoe-to-GitHub-Pages</id>
+   <content type="html">&lt;h2&gt;1. Welcome to GitHub Pages.&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;This&lt;/strong&gt; automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;$ cd your_repo_root/repo_name&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$ git fetch origin&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;$ git checkout gh-pages&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;If&lt;/strong&gt; you&#39;re using the GitHub for Mac, simply sync your repository and you&#39;ll see the new branch.&lt;/p&gt;
+
+&lt;h3&gt;Designer Templates&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;We&#39;ve&lt;/strong&gt; crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.&lt;/p&gt;
+
+&lt;h3&gt;Rather Drive Stick?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;If&lt;/strong&gt; you prefer to not use the automatic generator, push a branch named gh-pages to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.&lt;/p&gt;
+
+&lt;h3&gt;Authors and Contributors&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;You&lt;/strong&gt; can @mention a GitHub username to generate a link to their profile. The resulting &lt;a&gt; element will link to the contributor&#39;s GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.&lt;/p&gt;
+
+&lt;h3&gt;Support or Contact&lt;/h3&gt;
+
+&lt;p&gt;Having trouble with Pages? Check out the documentation at http://help.github.com/pages or contact support@github.com and we’ll help you sort it out.&lt;/p&gt;
+<strong>原创文章，转载请注明：</strong>转载自：<a href='http://mbyte.cc/blog/2013/05/12/Welcoe-to-GitHub-Pages.html'>Welcome to GitHub Pages</a></content>
+ </entry>
+ 
+ 
+</feed>
