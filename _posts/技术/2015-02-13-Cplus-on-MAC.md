@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mac以及Windows上搭建C++工作环境
+title: Mac以及Windows上搭建C++工作环境---00
 category: 技术
 tags: Mac
-keywords: 
-description: 
+keywords:
+description:
 ---
 
 实验室里我申请的垃圾老爷机被师弟玩坏了，弄了一天，最后发现根本就是硬件损伤，想把它砸掉！太坑了。
