@@ -4,13 +4,13 @@ markdown: redcarpet
 
 # 作者信息
 author:
-name: Anya Lin
-email: lay.1010@hotmail.com
-link: http://painterlin.com
-weibo: http://weibo.com/orangeissweet
-github: http://github.com/lay1010
-music: http://site.douban.com/linanya
-linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+name: Ealing
+email: yilongxie@qq.com
+link: http://mbyte.cc
+weibo:
+github: http://github.com/linglong117
+music:
+linkedin:
 
 # 站点信息
 title: Move Bytes
@@ -19,8 +19,8 @@ url: http://mbyte.cc
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/deer3.png
-favicon: /public/img/deer3.png
+gavatar: /public/img/gingko.jpg
+favicon: /public/img/gingko.jpg
 
 # google analytics 设置
 ga:
