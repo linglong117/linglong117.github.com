@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Move Bytes</title>
+    <link>painterlin.com</link>
+    <description>My personal blog</description>
+    
+      <item>
+        <title>2016年阅读书单</title>
+        <link>painterlin.com/2016/01/28/Book-List-2016.html</link>
+        <guid isPermaLink="true">painterlin.com/2016/01/28/Book-List-2016.html</guid>
+        <pubDate>Thu, 28 Jan 2016 00:00:00 +0800</pubDate>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>吉他上弦枕的DIY调节</title>
+        <link>painterlin.com/2015/10/26/Do-with-your-guitar.html</link>
+        <guid isPermaLink="true">painterlin.com/2015/10/26/Do-with-your-guitar.html</guid>
+        <pubDate>Mon, 26 Oct 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;&lt;code&gt;博客作者已获得原文作者Akira Satoyoshi授权翻译发表&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt;惯例开场故事&lt;/h3&gt;
+
+&lt;p&gt;今年4月底，我买了一把Maton ebg808TE。对新琴爱不释手，却苦于弦距太高，手感不适。经过测量，12品弦距达到了3mm。其实12品弦距在2.5mm~3.5mm之间属于正常范围，但我之前的Martin 000x1ae在1品和12品的弦距都非常低，我习惯了这样的手感。&lt;/p&gt;
+
+&lt;p&gt;5月初，在Youtube上我观看了一些Maton ebg808TE的视频，其中一个就是Akira弹奏的。我被他的演奏打动了，也就想试着请教一下他关于这把琴应该怎样调整手感。当时仅仅是在Youtube上简单的留言，Akira很快地回复了我，并给我留了邮箱以便我咨询更多的问题。&lt;/p&gt;
+
+&lt;p&gt;我试着发了封信过去，请教他对于Maton ebg808TE这把琴，在琴颈调直的情况下，应该怎样做才能将手感调得更好。&lt;/p&gt;
+
+&lt;p&gt;Akira回复的经验大概如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;打磨下弦枕可以调节12品弦距，若想12品弦距减少n毫米，则需要将下弦枕磨短2n毫米&lt;/li&gt;
+&lt;li&gt;但1品弦距无法通过打磨下弦枕调节&lt;/li&gt;
+&lt;li&gt;需要挫上弦枕调节1品弦距&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;非常感谢一个陌生人愿意花时间去教另一个陌生人，并写得如此详细。还记得当时阅读邮件的感动。这里我把Akira教我的关于处理上弦枕的邮件发表出来，也许可以帮助到更多的吉他爱好者。&lt;/p&gt;
+
+&lt;h3&gt;相关术语&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;nut 上弦枕&lt;/li&gt;
+&lt;li&gt;saddle 下弦枕&lt;/li&gt;
+&lt;li&gt;action 弦距&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Akira给我的回信译文&lt;/h3&gt;
+
+&lt;p&gt;嗨，那你先看一下这个视频吧。这个视频可以让你更好地明白怎样才能从吉他琴颈上取下上弦枕。把上弦枕拿下来并不是一件非常困难的事，但在你清理上弦枕拿下后的那个琴颈上的槽沟时得格外小心。槽沟里有时会有残留的胶水，你需要把它们弄干净，之后才能把新的上弦枕放进去。否则新上弦枕的底部无法与琴颈槽沟完美接触，而这会影响到琴的声音。&lt;/p&gt;
+
+&lt;p&gt;关于制作一个新的上弦枕，我推荐以下的网站和视频。它们真的能帮上大忙。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.strangeguitarworks.com/guitar-nut-from-scratch/&quot;&gt;http://www.strangeguitarworks.com/guitar-nut-from-scratch/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://diystrat.blogspot.com.au/2010/10/making-bone-nut-from-scratch.html?m=1&quot;&gt;http://diystrat.blogspot.com.au/2010/10/making-bone-nut-from-scratch.html?m=1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://m.youtube.com/watch?v=kn1z2R-w3i4&quot;&gt;https://m.youtube.com/watch?v=kn1z2R-w3i4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;下图是许多人讨论得出的理想的上弦枕上六个琴弦槽的深度，我也觉得这样的琴弦槽深度是最好的。对于第六、五、四弦，琴弦槽的深度应该保证让琴弦的上半部分露在槽的外面，这能让琴弦有更好的震动。对于第三、二、一弦，槽的深度应该让琴弦正好完全陷入槽内。在自己的琴上，我甚至让第三弦也露出弦槽一丁点儿，我觉得这样声音更好。所以当你调整上弦枕的弦槽深度时，你也许需要锉得比较深才能获得完美的弦距。然而如此一来，琴弦就会太过陷入上弦枕，所以你还需要把上弦枕上部多余的部分挫掉，好让琴弦安放得像图中那样。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut.png&quot; alt=&quot;01&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;下图显示的是琴弦与上弦枕的整体接触程度。当你在挫琴弦槽的时候，你要确保槽沟是有角度的，这个角度朝向琴弦钮，不能太高，也不能低于琴弦穿过的琴弦钮上的洞。&lt;/p&gt;
+
+&lt;p&gt;（未完待续...如果需要可先阅读原文）&lt;/p&gt;
+
+&lt;h3&gt;回信原文&lt;/h3&gt;
+
+&lt;p&gt;Hi, ok then first you can watch this vedio. This is a very good video to understand how to remove the nut. Removing a nut isn&amp;#39;t very difficult. But be very careful when you clean the slot on the neck. There&amp;#39;s sometimes old glue left in the slot and you have to get rid of it before putting a new nut in. Otherwise the bottom of the new nut won&amp;#39;t touch the slot perfectly and it affects the sound.&lt;/p&gt;
+
+&lt;p&gt;For making a new nut I liked those websites and videos. They are really helpful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.strangeguitarworks.com/guitar-nut-from-scratch/&quot;&gt;http://www.strangeguitarworks.com/guitar-nut-from-scratch/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://diystrat.blogspot.com.au/2010/10/making-bone-nut-from-scratch.html?m=1&quot;&gt;http://diystrat.blogspot.com.au/2010/10/making-bone-nut-from-scratch.html?m=1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://m.youtube.com/watch?v=kn1z2R-w3i4&quot;&gt;https://m.youtube.com/watch?v=kn1z2R-w3i4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The photo below is the ideal nut slot depth that many people talk about and I think it&amp;#39;s true. I like it too.  For the 6th ~ 4th strings, the depth should be that the top half of the strings sticks out of the nut slots. This allows the strings vibrates more.  For the 3rd ~ 1st strings, the depth should be that the strings are just completely in the slots. I even made the 3rd strings stick out a little and it sounds better. So when you are adjusting the nut slot depth, you might have to file it quite deep to get the perfect action for you. In that case the strings are too deep in the nut, then you&amp;#39;ll have to file down the top of the nut so that the strings sit just like the photos below. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut.png&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The photos below is about how much of the strings are touching(sitting) on the nut. When you file a nut slots you have to make sure that you file it at an angle TOWARDS the string post hole, not too high or low than the hole. &lt;/p&gt;
+
+&lt;p&gt;After filing the slots, you can file down the yellow part by filing at a sharper angle(lower than the string post hole) so strings DON&amp;#39;T touch the filed part.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut_angle.png&quot; alt=&quot;2&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a photo looking at a nut from above after you&amp;#39;ve filed the yellow part.  The black part is where strings are touching. Like 50% of the strings are sitting on the nut. By doing this the tension on the strings become lighter, making it easy to play. And the sound becomes brighter compared to when you don&amp;#39;t do this trick. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut_concave.png&quot; alt=&quot;3&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This photo is about intonation.  &lt;/p&gt;
+
+&lt;p&gt;When you file nut slots, make sure the highest contact point is at the blue circled spot( exactly where the nut and fretboard touch each other). &lt;/p&gt;
+
+&lt;p&gt;If you file the slot like the yellow line, the highest point is on the yellow circled spot. It means it&amp;#39;s like the scale of your guitar neck is longer which makes your guitar go out of tune all the time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut_good.png&quot; alt=&quot;4&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Nut has to fit without any gap on all the sides and bottom like this photo. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut_real.png&quot; alt=&quot;5&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;You can check it with a light like this. I just used my iPhone torch and it works fine. If there&amp;#39;s gap you can see the light coming through and it&amp;#39;s not a good news! &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7xnp1z.com1.z0.glb.clouddn.com/guitar_nut_light.png&quot; alt=&quot;6&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;For nut action, this website below is so great. A perfect explanation. I think this part is the main reason you want to replace the nut right?&lt;/p&gt;
+
+&lt;p&gt;Oh and Is your 808TE a newer model? If yours has a kangaroo inlay and reddish colour back and sides, the nut and saddles are bone. My older model had black nut and saddle made of some mixture of glass and plastic. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.frets.com/FretsPages/Musician/GenSetup/NutAction/nutaction.html&quot;&gt;http://www.frets.com/FretsPages/Musician/GenSetup/NutAction/nutaction.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I learnt everything on the internet. So you can do research by your self too. Just search by  &amp;quot;how to shape a guitar nut&amp;quot; &amp;quot;how to file nut slots&amp;quot;. And it will show you lots of links. Lots of videos available on youtube too.  One of the important thing I can say is that to do it slowly, don&amp;#39;t rush and be patient because once you file a nut too much, you&amp;#39;ll have to start a new one again!&lt;/p&gt;
+
+&lt;p&gt;Let me know if you need anything else. &lt;/p&gt;
+
+&lt;p&gt;First work on nut then you can change the saddle. &lt;/p&gt;
+
+&lt;p&gt;If you need my help for the saddle, just write me again and I&amp;#39;ll give you some advise.  Just be gentle on your guitar because you don&amp;#39;t wanna wreck your guitar! No one wants to:)
+Good luck! &lt;/p&gt;
+
+&lt;p&gt;Akira&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>从二次型最优化问题中理解矩阵特征值的意义</title>
+        <link>painterlin.com/2015/09/12/Intuition-of-Eigen-Value.html</link>
+        <guid isPermaLink="true">painterlin.com/2015/09/12/Intuition-of-Eigen-Value.html</guid>
+        <pubDate>Sat, 12 Sep 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h3&gt;惯例开场故事&lt;/h3&gt;
+
+&lt;p&gt;在某次从实验室去往食堂的路上，曾发生这样一段对话：&lt;/p&gt;
+
+&lt;p&gt;『大师兄，为什么你对算法的理解总是那么透彻呢？为什么我很难看出它背后的思想？』&lt;/p&gt;
+
+&lt;p&gt;『因为你去理解一个算法的时候，不能只是看懂它的形，还要去思考它的神啊~』&lt;/p&gt;
+
+&lt;p&gt;这就是我天分不够当不了科学家的佐证吧T。T&lt;/p&gt;
+
+&lt;h3&gt;从二次型最优化来理解&lt;/h3&gt;
+
+&lt;p&gt;最小化二次型目标函数&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=f(x)=x^TAx&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?f(x)=x^TAx&quot; title=&quot;f(x)=x^TAx&quot; /&gt;&lt;/a&gt;，其中A为已知的实对称二阶矩阵，&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=A=[1,0.5;0.5,1]&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?A=[1,0.5;0.5,1]&quot; title=&quot;A=[1,0.5;0.5,1]&quot; /&gt;&lt;/a&gt;，&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=x=[x_1,x_2]^{\textrm{T}}&amp;space;\in&amp;space;\textcal{R}^2&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?x=[x_1,x_2]^{\textrm{T}}&amp;space;\in&amp;space;\textcal{R}^2&quot; title=&quot;x=[x_1,x_2]^{\textrm{T}} \in \textcal{R}^2&quot; /&gt;&lt;/a&gt;.这个问题的求解很简单，这里以此为例来说明该问题与矩阵特征值的关系。&lt;/p&gt;
+
+&lt;p&gt;首先，可以得到目标函数的网格图与等高线图如下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mesh_of_f.png&quot; alt=&quot;1&quot;&gt;
+&lt;img src=&quot;/public/img/posts/contour_of_f.png&quot; alt=&quot;2&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;对矩阵A进行特征分解可以得到其特征向量为[-0.7071, 0.7071], [0.7071, 0.7071]，对应的特征值分别是0.5, 1.5.&lt;/p&gt;
+
+&lt;p&gt;观察函数的等高线图可以知道，等高线最密集的地方，函数值变化最快，而这个函数值变化最快的方向归一化后就是[0.7071, 0.7071]，这恰好是矩阵的一个特征向量。同样地，可以观察，等高线最稀疏的地方，函数值变化最慢，变化方向则是矩阵的另一个特征向量。可以看出，&lt;code&gt;矩阵特征值的大小与函数值的变化快慢有关&lt;/code&gt;，较大特征值所对应的特征向量方向上函数值的变化较快，较小特征值所对应的特征向量方向上函数值的变化较慢。&lt;/p&gt;
+
+&lt;p&gt;进一步，对于实对称矩阵，我们总是可以对其进行相似变化，得到一个以该矩阵特征值为对角线元素的对角阵。&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=P^{-1}AP=B&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?P^{-1}AP=B&quot; title=&quot;P^{-1}AP=B&quot; /&gt;&lt;/a&gt;，其中，P为正交矩阵，有性质P的逆等于P的转置。把目标函数改写为&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=f(x)=x^{\textrm{T}}PBP^{\textrm{T}}x&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?f(x)=x^{\textrm{T}}PBP^{\textrm{T}}x&quot; title=&quot;f(x)=x^{\textrm{T}}PBP^{\textrm{T}}x&quot; /&gt;&lt;/a&gt;，其中&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=B=[0.5,&amp;space;0;&amp;space;0,&amp;space;1.5]&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?B=[0.5,&amp;space;0;&amp;space;0,&amp;space;1.5]&quot; title=&quot;B=[0.5, 0; 0, 1.5]&quot; /&gt;&lt;/a&gt;. 相似变换的作用可以理解为将等高线图进行旋转，于是得到下面经过旋转后的等高线图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/contour_of_f_B.png&quot; alt=&quot;3&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;在这张图上说明矩阵特征值的意义。当函数值取1时所对应的椭圆等高线的长轴长度为&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\frac{1}{\sqrt{0.5}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?\frac{1}{\sqrt{0.5}}&quot; title=&quot;\frac{1}{\sqrt{0.5}}&quot; /&gt;&lt;/a&gt;， 即由矩阵特征值0.5决定。同理，该椭圆短轴长度为&lt;a href=&quot;http://www.codecogs.com/eqnedit.php?latex=\frac{1}{\sqrt{1.5}}&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://latex.codecogs.com/gif.latex?\frac{1}{\sqrt{1.5}}&quot; title=&quot;\frac{1}{\sqrt{1.5}}&quot; /&gt;&lt;/a&gt;，由矩阵特征值1.5决定。&lt;/p&gt;
+
+&lt;p&gt;二阶矩阵的理解较为直观。高阶矩阵的道理是一样的。&lt;/p&gt;
+
+&lt;h3&gt;资料&lt;/h3&gt;
+
+&lt;p&gt;【1】&lt;a href=&quot;http://www.zhihu.com/question/21874816/answer/19592526&quot;&gt;如何理解矩阵特征值&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>租房奇遇记</title>
+        <link>painterlin.com/2015/07/05/Never-Trust-the-Word-from-Qipa.html</link>
+        <guid isPermaLink="true">painterlin.com/2015/07/05/Never-Trust-the-Word-from-Qipa.html</guid>
+        <pubDate>Sun, 05 Jul 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;&lt;img src=&quot;/public/img/days/ca.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;故事&lt;/h3&gt;
+
+&lt;p&gt;“人生真的是一场很长的修炼，我还处于小白阶段。”记第一次租房被耍。&lt;/p&gt;
+
+&lt;p&gt;2015.09.29补充：
+我确实是一个很幸运的人，在被奇怪的房东耍过之后，居然又开启一段神奇的际遇：在四位善良的『陌生同学』的帮助下，我在北京没有交一分钱房租而度过了大半个暑假。真的，谢谢大家。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Mac以及Windows上搭建C++工作环境---00</title>
+        <link>painterlin.com/2015/02/13/Cplus-on-MAC.html</link>
+        <guid isPermaLink="true">painterlin.com/2015/02/13/Cplus-on-MAC.html</guid>
+        <pubDate>Fri, 13 Feb 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;实验室里我申请的垃圾老爷机被师弟玩坏了，弄了一天，最后发现根本就是硬件损伤，想把它砸掉！太坑了。&lt;/p&gt;
+
+&lt;p&gt;clang是osx自带的c,c++,objective-c编译器；gnu是常用的c++的轻量级编译器，在windows上通常是下载MinGW；sublime就不多说了；本文的目的就是搭建一个轻量级的C++编辑-编译-调试-运行环境。&lt;/p&gt;
+
+&lt;h2&gt;MAC上&lt;/h2&gt;
+
+&lt;h3&gt;方法一：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;打开sublime，&lt;code&gt;command&lt;/code&gt;+&lt;code&gt;shift&lt;/code&gt;+&lt;code&gt;P&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;输入install，选择&lt;code&gt;install package&lt;/code&gt;，回车&lt;/li&gt;
+&lt;li&gt;输入sublimeClang，回车下载&lt;/li&gt;
+&lt;li&gt;编写一个简单的c++程序，保存为name.cpp&lt;/li&gt;
+&lt;li&gt;在terminal中，&lt;code&gt;clang++ name.cpp -o name&lt;/code&gt;或者&lt;code&gt;g++ name.cpp -o name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;双击name运行&lt;/li&gt;
+&lt;li&gt;如果运行过程不需要输入数据，可以直接在sublime中&lt;code&gt;command&lt;/code&gt;+&lt;code&gt;shift&lt;/code&gt;+&lt;code&gt;B&lt;/code&gt;运行&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;方法二&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;AppStore中下载Xcode&lt;/li&gt;
+&lt;li&gt;使用这个IDE&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;WINDOWS上&lt;/h2&gt;
+
+&lt;h3&gt;方法一：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;安装Installation Manager，运行，选择需要下载的组件，比如这里需要C++有关的组件&lt;/li&gt;
+&lt;li&gt;将MinGW的安装路径添加到环境变量中&lt;/li&gt;
+&lt;li&gt;cmd中输入&lt;code&gt;g++ -v&lt;/code&gt;来检测gnu是否安装成功&lt;/li&gt;
+&lt;li&gt;打开sublime text 3&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;preferences&lt;/code&gt;-&amp;gt;&lt;code&gt;browse packages&lt;/code&gt;-&amp;gt;&lt;code&gt;gcc&lt;/code&gt;(好像是这样，反正自己摸索就好了)&lt;/li&gt;
+&lt;li&gt;OK，完成&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;方法二：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Visual Studio&lt;/li&gt;
+&lt;li&gt;使用该IDE&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;有用的资料&lt;/h3&gt;
+
+&lt;p&gt;【1】&lt;a href=&quot;https://www.cs.drexel.edu/%7Emcs171/Sp14/extras/g++/index.html&quot;&gt;Writing and Running C++ Programs in the UNIX Environment using g++&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;【2】&lt;a href=&quot;https://www.cs.drexel.edu/%7Emcs171/Sp14/extras/xCode_Instructions/index.html&quot;&gt;Writing and Running C++ Programs in the Mac OS X 10.4 Environment using xCode&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>黑椒牛排</title>
+        <link>painterlin.com/2014/11/02/Steak.html</link>
+        <guid isPermaLink="true">painterlin.com/2014/11/02/Steak.html</guid>
+        <pubDate>Sun, 02 Nov 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“两个人吃的是饭，一个人吃的是饲料。”——日剧《最完美的离婚》&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;就算这样，那也要用心地吃饲料啊。&lt;/p&gt;
+
+&lt;h3&gt;材料&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;超市黑椒牛排&lt;/li&gt;
+&lt;li&gt;黑胡椒&lt;/li&gt;
+&lt;li&gt;橄榄油&lt;/li&gt;
+&lt;li&gt;西兰花&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;步骤&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;西兰花焯水，捞出备用。&lt;/li&gt;
+&lt;li&gt;锅内加入适量橄榄油，将准备好的西兰花加入锅内快速翻炒2分钟，装入盘内。&lt;/li&gt;
+&lt;li&gt;锅内加入适量橄榄油，大火将油加至7、8成热。&lt;/li&gt;
+&lt;li&gt;将牛排放入煎锅，以听到清脆的滋滋声为准来判断步骤3中油是否够热。&lt;/li&gt;
+&lt;li&gt;转为中火，每隔1~2分钟将牛排翻一次面，翻3~4次即可。（这一次的牛排厚度仅为13mm左右，如果牛排更厚，我觉得最多翻6次就够了。此时牛排外表焦香，里面不会渗血又够嫩。）&lt;/li&gt;
+&lt;li&gt;牛排装盘，撒上黑胡椒碎屑，不要急着切，静置2分钟，让牛肉吸足汤汁。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;完成&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/food/steak.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;后记&lt;/h3&gt;
+
+&lt;p&gt;今天跑了12km，又搬家，又打扫卫生，直到煎好牛排全身发飘的时候才意识到：尼玛我就早上8点吃了2个手指饼啊有木有，真是饿成狗了，所以牛排做好立马风卷残云。&lt;/p&gt;
+
+&lt;p&gt;美味啊TT。&lt;/p&gt;
+</description>
+      </item>
+    
+  </channel>
+</rss>

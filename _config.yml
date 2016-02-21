@@ -18,6 +18,17 @@ description: My personal blog
 url: http://mbyte.cc
 rss_url: /pages/atom.xml
 
+Source: /Users/yilongxie/mbytes
+Destination: /Users/yilongxie/mbytes/_site
+Incremental build: disabled. Enable with --incremental
+
+Auto-regeneration: enabled for '/Users/yilongxie/mbytes'
+Configuration file: /Users/yilongxie/mbytes/_config.yml
+Server address: http://127.0.0.1:4000/
+
+gems: [jekyll-paginate]
+
+
 # gavatar头像及Favicon
 gavatar: /public/img/gingko.jpg
 favicon: /public/img/gingko.jpg
