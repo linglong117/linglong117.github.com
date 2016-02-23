@@ -65,6 +65,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Mac-Operation-not-permitted-usr-bin-XXX" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" class="article-date">
+  <time datetime="2016-02-23T14:53:35.000Z" itemprop="datePublished">2016-02-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/">Mac Operation not permitted - /usr/bin/XXX</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>安装cocoapods<br>sudo gem install  cocoapods</p>
+<p>提示：</p>
+<p>ERROR:  While executing gem … (Errno::EPERM)<br>    Operation not permitted - /usr/bin/xcodeproj</p>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>sudo gem install -n /usr/local/bin cocoapods</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>OS X El Capitan中，在内核下引入了Rootless机制，以下路径：/System/bin/sbin/usr (except /usr/local)均属于Rootless范围，即使root用户无法对此目录有写和执行权限，只有Apple以及Apple授权签名的软件（包括命令行工具）可以修改此目录。</p>
+<p>要么关闭Rootless（非开发者一般不推荐，或者建议执行后再次开启）附关闭方法：重启，开机按住Command + R，以Recovery分区启动，然后选择以下方式：图形化操作在Security Configuration中关闭Enforce System Integrity Protection命令行操作csrutil disable</p>
+<p>出现如下提示的原因是：<br>OS X 10.11 中System Integrity Protection 的功能，阻止了写入的操作的，默认是开启的，需要关闭。</p>
+<p>关闭方式：<br>重启电脑，长按Cmd+R，进入 Recovery 模式。然后打开终端工具 ，输入命令：csrutil disable，然后再次重启电脑即可。</p>
+<p>再次开启:csrutil enable</p>
+<p>但是关闭以后，10.11安全性方面的特性就不复存在了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mbyte.cc/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" data-id="cikzkc8yk0004j16sl0jh0ef9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-smartmince-O2O" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/22/smartmince-O2O/" class="article-date">
@@ -108,7 +154,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/smartmince-O2O/" data-id="cikyye82x0000kt6sxrtpm6vl" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/smartmince-O2O/" data-id="cikzkc8y50000j16sa89a9ddo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -152,7 +198,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/hexo-deply提示You-should-configure-deployment-settings-in-config-yml-first-Available-Types-git/" data-id="cikyye83k0002kt6s9wr03yf0" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/hexo-deply提示You-should-configure-deployment-settings-in-config-yml-first-Available-Types-git/" data-id="cikzkc8yg0002j16sx3o4qqzl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -193,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/" data-id="cikyye83e0001kt6s48o22c1t" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/" data-id="cikzkc8ye0001j16sk1bbxcqw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -238,7 +284,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/hello-world/" data-id="cikyye83m0003kt6s6ot2483e" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/hello-world/" data-id="cikzkc8yi0003j16sasx0muzx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,7 +309,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -273,6 +319,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/">Mac Operation not permitted - /usr/bin/XXX</a>
+          </li>
         
           <li>
             <a href="/2016/02/22/smartmince-O2O/">中智商展携手O2O众巨头, 重塑小微会议生态圈</a>

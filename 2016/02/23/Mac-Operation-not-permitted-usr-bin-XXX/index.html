@@ -3,17 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Move Bytes</title>
+  <title>Mac Operation not permitted - /usr/bin/XXX | Move Bytes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Move Bytes">
-<meta property="og:url" content="http://mbyte.cc/archives/index.html">
+  <meta name="description" content="问题描述安装cocoapodssudo gem install  cocoapods
+提示：
+ERROR:  While executing gem … (Errno::EPERM)    Operation not permitted - /usr/bin/xcodeproj
+解决方法sudo gem install -n /usr/local/bin cocoapods
+备注OS X El C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac Operation not permitted - /usr/bin/XXX">
+<meta property="og:url" content="http://mbyte.cc/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/index.html">
 <meta property="og:site_name" content="Move Bytes">
-<meta property="og:description">
+<meta property="og:description" content="问题描述安装cocoapodssudo gem install  cocoapods
+提示：
+ERROR:  While executing gem … (Errno::EPERM)    Operation not permitted - /usr/bin/xcodeproj
+解决方法sudo gem install -n /usr/local/bin cocoapods
+备注OS X El C">
+<meta property="og:updated_time" content="2016-02-23T15:24:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Move Bytes">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Mac Operation not permitted - /usr/bin/XXX">
+<meta name="twitter:description" content="问题描述安装cocoapodssudo gem install  cocoapods
+提示：
+ERROR:  While executing gem … (Errno::EPERM)    Operation not permitted - /usr/bin/xcodeproj
+解决方法sudo gem install -n /usr/local/bin cocoapods
+备注OS X El C">
   
     <link rel="alternative" href="/atom.xml" title="Move Bytes" type="application/atom+xml">
   
@@ -63,115 +76,62 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" class="archive-article-date">
-  <time datetime="2016-02-23T14:53:35.000Z" itemprop="datePublished">2月 23</time>
+        <section id="main"><article id="post-Mac-Operation-not-permitted-usr-bin-XXX" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" class="article-date">
+  <time datetime="2016-02-23T14:53:35.000Z" itemprop="datePublished">2016-02-23</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/">Mac Operation not permitted - /usr/bin/XXX</a>
+    <h1 class="article-title" itemprop="name">
+      Mac Operation not permitted - /usr/bin/XXX
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/22/smartmince-O2O/" class="archive-article-date">
-  <time datetime="2016-02-22T09:15:10.000Z" itemprop="datePublished">2月 22</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/smartmince-O2O/">中智商展携手O2O众巨头, 重塑小微会议生态圈</a>
-    </h1>
-  
+        <h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>安装cocoapods<br>sudo gem install  cocoapods</p>
+<p>提示：</p>
+<p>ERROR:  While executing gem … (Errno::EPERM)<br>    Operation not permitted - /usr/bin/xcodeproj</p>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>sudo gem install -n /usr/local/bin cocoapods</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>OS X El Capitan中，在内核下引入了Rootless机制，以下路径：/System/bin/sbin/usr (except /usr/local)均属于Rootless范围，即使root用户无法对此目录有写和执行权限，只有Apple以及Apple授权签名的软件（包括命令行工具）可以修改此目录。</p>
+<p>要么关闭Rootless（非开发者一般不推荐，或者建议执行后再次开启）附关闭方法：重启，开机按住Command + R，以Recovery分区启动，然后选择以下方式：图形化操作在Security Configuration中关闭Enforce System Integrity Protection命令行操作csrutil disable</p>
+<p>出现如下提示的原因是：<br>OS X 10.11 中System Integrity Protection 的功能，阻止了写入的操作的，默认是开启的，需要关闭。</p>
+<p>关闭方式：<br>重启电脑，长按Cmd+R，进入 Recovery 模式。然后打开终端工具 ，输入命令：csrutil disable，然后再次重启电脑即可。</p>
+<p>再次开启:csrutil enable</p>
+<p>但是关闭以后，10.11安全性方面的特性就不复存在了</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/22/hexo-deply提示You-should-configure-deployment-settings-in-config-yml-first-Available-Types-git/" class="archive-article-date">
-  <time datetime="2016-02-22T08:31:59.000Z" itemprop="datePublished">2月 22</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/hexo-deply提示You-should-configure-deployment-settings-in-config-yml-first-Available-Types-git/">hexo deply提示You should configure deployment settings in _config.yml first!  Available Types: git...</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/" class="archive-article-date">
-  <time datetime="2016-02-22T08:18:19.000Z" itemprop="datePublished">2月 22</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mbyte.cc/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" data-id="cikzkc8yk0004j16sl0jh0ef9" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/">hexo 提交导致github page仓库上另外添加的文件被删除</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/02/22/hello-world/" class="archive-article-date">
-  <time datetime="2016-02-22T07:56:06.000Z" itemprop="datePublished">2月 22</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/02/22/smartmince-O2O/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">中智商展携手O2O众巨头, 重塑小微会议生态圈</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
         
           <aside id="sidebar">
