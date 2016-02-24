@@ -65,6 +65,51 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-xcode-attempted-to-locate-or-generat" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/02/24/xcode-attempted-to-locate-or-generat/" class="article-date">
+  <time datetime="2016-02-24T14:57:39.000Z" itemprop="datePublished">2016-02-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/24/xcode-attempted-to-locate-or-generat/">xcode-attempted-to-locate-or-generat</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Xcode-attempted-to-locate-or-generate…"><a href="#Xcode-attempted-to-locate-or-generate…" class="headerlink" title="Xcode attempted to locate or generate…"></a>Xcode attempted to locate or generate…</h3><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h5><p>今天发布 ipa时出现如下提示，一开始以为xcode-beta 版造成的呢，今天刚装的，于是乎用了xcode7.2.1 同意出现如下提示：</p>
+<p> Failed to locate or generate matching signing assets</p>
+<p>Xcode attempted to locate or generate matching signing assets and failed to do so because of the following issues.</p>
+<p>Missing iOS Distribution signing identity for … Xcode can request one for you.</p>
+<p>原因是-&gt;苹果全球开发者关系证书颁发机构证书的过期版本（2016年2月14日过期）- Apple World Wide Developer Relations Certificate Authority的过期时间是2016年2月14。</p>
+<p>Thanks for bringing this to the attention of the community and apologies for the issues you’ve been having. This issue stems from having a copy of the expired WWDR Intermediate certificate in both your System and Login keychains. To resolve the issue, you should first download and install the new WWDR intermediate certificate (by double-clicking on the file). Next, in the Keychain Access application, select the System keychain. Make sure to select “Show Expired Certificates” in the View menu and then delete the expired version of the Apple Worldwide Developer Relations Certificate Authority Intermediate certificate (expired on February 14, 2016). Your certificates should now appear as valid in Keychain Access and be available to Xcode for submissions to the App Store.</p>
+<p>更新证书的链接：<a href="developer.apple.com/certificationauthority/AppleWWDRCA.cer">AppleWWDRCA.cer</a>  <a href="https://developer.apple.com/certificationauthority/AppleWWDRCA.cer" target="_blank" rel="external">https://developer.apple.com/certificationauthority/AppleWWDRCA.cer</a></p>
+<p>重新下载证书安装即可；安装前需要把就的证书删除，不过旧的证书我没删除直接安装新的也可以的；</p>
+<p>1、打开keychain（钥匙串），在登录和系统中找到过期的 Apple World Wide Developer Relation Certification Authority，然后删除它<br>注意在keychain显示菜单下，设置成显示过期证书</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://mbyte.cc/2016/02/24/xcode-attempted-to-locate-or-generat/" data-id="cil0zsr1a0000ao6sds733aor" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Mac-Operation-not-permitted-usr-bin-XXX" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" class="article-date">
@@ -101,7 +146,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" data-id="cikzkc8yk0004j16sl0jh0ef9" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/" data-id="cil0zsr1r0005ao6shp6xppza" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,7 +199,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/smartmince-O2O/" data-id="cikzkc8y50000j16sa89a9ddo" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/smartmince-O2O/" data-id="cil0zsr1h0001ao6s2qtos2gp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -198,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/hexo-deply提示You-should-configure-deployment-settings-in-config-yml-first-Available-Types-git/" data-id="cikzkc8yg0002j16sx3o4qqzl" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/hexo-deply提示You-should-configure-deployment-settings-in-config-yml-first-Available-Types-git/" data-id="cil0zsr1o0003ao6s96q63rza" class="article-share-link">Share</a>
       
       
     </footer>
@@ -239,7 +284,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/" data-id="cikzkc8ye0001j16sk1bbxcqw" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/" data-id="cil0zsr1n0002ao6smdi38kio" class="article-share-link">Share</a>
       
       
     </footer>
@@ -284,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/22/hello-world/" data-id="cikzkc8yi0003j16sasx0muzx" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/22/hello-world/" data-id="cil0zsr1q0004ao6srmt3qjvu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -309,7 +354,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
@@ -319,6 +364,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/02/24/xcode-attempted-to-locate-or-generat/">xcode-attempted-to-locate-or-generat</a>
+          </li>
         
           <li>
             <a href="/2016/02/23/Mac-Operation-not-permitted-usr-bin-XXX/">Mac Operation not permitted - /usr/bin/XXX</a>
@@ -334,10 +383,6 @@
         
           <li>
             <a href="/2016/02/22/hexo-提交导致github-page仓库上另外添加的文件被删除/">hexo 提交导致github page仓库上另外添加的文件被删除</a>
-          </li>
-        
-          <li>
-            <a href="/2016/02/22/hello-world/">Hello World</a>
           </li>
         
       </ul>
