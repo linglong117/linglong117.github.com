@@ -15,7 +15,7 @@ Xcode attempted to locate or gener">
 <meta property="og:description" content="Xcode attempted to locate or generate…问题描述今天发布 ipa时出现如下提示，一开始以为xcode-beta 版造成的呢，今天刚装的，于是乎用了xcode7.2.1 同意出现如下提示：
  Failed to locate or generate matching signing assets
 Xcode attempted to locate or gener">
-<meta property="og:updated_time" content="2016-02-24T15:24:53.000Z">
+<meta property="og:updated_time" content="2016-02-24T15:29:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="xcode-attempted-to-locate-or-generat">
 <meta name="twitter:description" content="Xcode attempted to locate or generate…问题描述今天发布 ipa时出现如下提示，一开始以为xcode-beta 版造成的呢，今天刚装的，于是乎用了xcode7.2.1 同意出现如下提示：
@@ -97,6 +97,7 @@ Xcode attempted to locate or gener">
 <p>Xcode attempted to locate or generate matching signing assets and failed to do so because of the following issues.</p>
 <p>Missing iOS Distribution signing identity for … Xcode can request one for you.</p>
 <p>原因是-&gt;苹果全球开发者关系证书颁发机构证书的过期版本（2016年2月14日过期）- Apple World Wide Developer Relations Certificate Authority的过期时间是2016年2月14。</p>
+<p>From Apple -</p>
 <p>Thanks for bringing this to the attention of the community and apologies for the issues you’ve been having. This issue stems from having a copy of the expired WWDR Intermediate certificate in both your System and Login keychains. To resolve the issue, you should first download and install the new WWDR intermediate certificate (by double-clicking on the file). Next, in the Keychain Access application, select the System keychain. Make sure to select “Show Expired Certificates” in the View menu and then delete the expired version of the Apple Worldwide Developer Relations Certificate Authority Intermediate certificate (expired on February 14, 2016). Your certificates should now appear as valid in Keychain Access and be available to Xcode for submissions to the App Store.</p>
 <p>更新证书的链接：<a href="developer.apple.com/certificationauthority/AppleWWDRCA.cer">AppleWWDRCA.cer</a>  <a href="https://developer.apple.com/certificationauthority/AppleWWDRCA.cer" target="_blank" rel="external">https://developer.apple.com/certificationauthority/AppleWWDRCA.cer</a></p>
 <p>重新下载证书安装即可；安装前需要把就的证书删除，不过旧的证书我没删除直接安装新的也可以的；</p>
@@ -105,7 +106,7 @@ Xcode attempted to locate or gener">
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://mbyte.cc/2016/02/24/xcode-attempted-to-locate-or-generat/" data-id="cil0zsr1a0000ao6sds733aor" class="article-share-link">Share</a>
+      <a data-url="http://mbyte.cc/2016/02/24/xcode-attempted-to-locate-or-generat/" data-id="cil0zxrr30000b76s44gzeave" class="article-share-link">Share</a>
       
       
     </footer>
