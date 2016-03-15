@@ -228,6 +228,118 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/15/npm-not-package-json/" itemprop="url">
+                  npm-not-package.json
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T10:27:02+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="npm-init-not-creating-package-json-on-mac"><a href="#npm-init-not-creating-package-json-on-mac" class="headerlink" title="npm init not creating package.json on mac"></a>npm init not creating package.json on mac</h4><p>See <a href="https://www.npmjs.com/package/npm-autoinit" target="_blank" rel="external">https://www.npmjs.com/package/npm-autoinit</a></p>
+ <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">ls</span></span><br><span class="line">…</span><br><span class="line">npm <span class="keyword">ERR</span>! <span class="keyword">error</span> <span class="keyword">in</span> /tmp/tmpdir/R3semq: ENOENT: <span class="keyword">no</span> such <span class="keyword">file</span> or directory, <span class="keyword">open</span> '/tmp/tmpdir/R3semq/package.json'</span><br></pre></td></tr></table></figure>
+<p>I often use temporary directories to play/experiment with packages and hustling with package.json every time I want to check out some package is not an option for me.</p>
+<p>This module will make npm run </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init --yes</span><br></pre></td></tr></table></figure>
+<p>automatically for you if it sees fit.</p>
+<p>See <a href="https://github.com/npm/npm/issues/9161" target="_blank" rel="external">https://github.com/npm/npm/issues/9161</a></p>
+<h4 id="备注：在对应的文件夹下运行"><a href="#备注：在对应的文件夹下运行" class="headerlink" title="备注：在对应的文件夹下运行"></a>备注：在对应的文件夹下运行</h4><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> init --<span class="literal">yes</span></span><br></pre></td></tr></table></figure>
+<p>See  <a href="http://stackoverflow.com/questions/21982785/npm-init-not-creating-package-json-on-my-mac" target="_blank" rel="external">http://stackoverflow.com/questions/21982785/npm-init-not-creating-package-json-on-my-mac</a></p>
+<p>Try this.</p>
+<ol>
+<li><p>Go to terminal.</p>
+</li>
+<li><p>Change directory location where you want to create a file.</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> your_destination_folder</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Type npm init and press enter.</p>
+</li>
+<li><p>It ask for name, version, description, entry point, test command, git repository, keywords, author, license. Pass those values.</p>
+</li>
+<li><p>Then it prompt, Is this ok? (yes). Enter yes.</p>
+</li>
+</ol>
+<p>Hurray, your package.json file is created.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/10/usb-install-win10/" itemprop="url">
                   U盘安装系统,提示缺少CD/DVD驱动器设备驱动程序
                 </a>
@@ -809,7 +921,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/02/22/hello-world/" itemprop="url">
+                <a class="post-title-link" href="/2016/02/21/hello-world/" itemprop="url">
                   Hello World
                 </a>
               
@@ -823,8 +935,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-22T15:56:06+08:00" content="2016-02-22">
-              2016-02-22
+            <time itemprop="dateCreated" datetime="2016-02-21T23:33:07+08:00" content="2016-02-21">
+              2016-02-21
             </time>
           </span>
 
@@ -926,7 +1038,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mbyte.cc/"/>
-  <updated>2016-03-10T05:51:04.000Z</updated>
+  <updated>2016-03-15T04:02:05.000Z</updated>
   <id>http://mbyte.cc/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm-not-package.json</title>
+    <link href="http://mbyte.cc/2016/03/15/npm-not-package-json/"/>
+    <id>http://mbyte.cc/2016/03/15/npm-not-package-json/</id>
+    <published>2016-03-15T02:27:02.000Z</published>
+    <updated>2016-03-15T04:02:05.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;npm-init-not-creating-package-json-on-mac&quot;&gt;&lt;a href=&quot;#npm-init-not-creating-package-json-on-mac&quot; class=&quot;headerlink&quot; title=&quot;npm init not creating package.json on mac&quot;&gt;&lt;/a&gt;npm init not creating package.json on mac&lt;/h4&gt;&lt;p&gt;See &lt;a href=&quot;https://www.npmjs.com/package/npm-autoinit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.npmjs.com/package/npm-autoinit&lt;/a&gt;&lt;/p&gt;
+ &lt;figure class=&quot;highlight stata&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm &lt;span class=&quot;keyword&quot;&gt;ls&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;…&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm &lt;span class=&quot;keyword&quot;&gt;ERR&lt;/span&gt;! &lt;span class=&quot;keyword&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; /tmp/tmpdir/R3semq: ENOENT: &lt;span class=&quot;keyword&quot;&gt;no&lt;/span&gt; such &lt;span class=&quot;keyword&quot;&gt;file&lt;/span&gt; or directory, &lt;span class=&quot;keyword&quot;&gt;open&lt;/span&gt; &#39;/tmp/tmpdir/R3semq/package.json&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;I often use temporary directories to play/experiment with packages and hustling with package.json every time I want to check out some package is not an option for me.&lt;/p&gt;
+&lt;p&gt;This module will make npm run &lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm init --yes&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;automatically for you if it sees fit.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&quot;https://github.com/npm/npm/issues/9161&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/npm/npm/issues/9161&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;备注：在对应的文件夹下运行&quot;&gt;&lt;a href=&quot;#备注：在对应的文件夹下运行&quot; class=&quot;headerlink&quot; title=&quot;备注：在对应的文件夹下运行&quot;&gt;&lt;/a&gt;备注：在对应的文件夹下运行&lt;/h4&gt;&lt;figure class=&quot;highlight coffeescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;npm&lt;/span&gt; init --&lt;span class=&quot;literal&quot;&gt;yes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;See  &lt;a href=&quot;http://stackoverflow.com/questions/21982785/npm-init-not-creating-package-json-on-my-mac&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/21982785/npm-init-not-creating-package-json-on-my-mac&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Try this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Go to terminal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Change directory location where you want to create a file.&lt;/p&gt;
+ &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; your_destination_folder&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Type npm init and press enter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It ask for name, version, description, entry point, test command, git repository, keywords, author, license. Pass those values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Then it prompt, Is this ok? (yes). Enter yes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hurray, your package.json file is created.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;npm-init-not-creating-package-json-on-mac&quot;&gt;&lt;a href=&quot;#npm-init-not-creating-package-json-on-mac&quot; class=&quot;headerlink&quot; title=&quot;npm init n
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>U盘安装系统,提示缺少CD/DVD驱动器设备驱动程序</title>
@@ -182,9 +224,9 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://mbyte.cc/2016/02/22/hello-world/"/>
-    <id>http://mbyte.cc/2016/02/22/hello-world/</id>
-    <published>2016-02-22T07:56:06.000Z</published>
+    <link href="http://mbyte.cc/2016/02/21/hello-world/"/>
+    <id>http://mbyte.cc/2016/02/21/hello-world/</id>
+    <published>2016-02-21T15:33:07.000Z</published>
     <updated>2016-02-22T07:56:06.000Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
