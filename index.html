@@ -271,12 +271,14 @@
       
         
           
-            <h4 id="mac下查找端口是否占用及关闭占用端口进程"><a href="#mac下查找端口是否占用及关闭占用端口进程" class="headerlink" title="mac下查找端口是否占用及关闭占用端口进程"></a>mac下查找端口是否占用及关闭占用端口进程</h4><h5 id="netstat命令"><a href="#netstat命令" class="headerlink" title="netstat命令"></a>netstat命令</h5><figure class="highlight plain"><figcaption><span>-an | grep 8002```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">8002替换成需要grep的端口号</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">##### lsof命令</span><br><span class="line">通过list open file命令可以查看到当前打开文件，在linux/mac中所有事物都是以文件形式存在，包括网络连接及硬件设备。</span><br><span class="line"></span><br><span class="line">```lsof -i:8002</span><br></pre></td></tr></table></figure>
+            <h4 id="mac下查找端口是否占用及关闭占用端口进程"><a href="#mac下查找端口是否占用及关闭占用端口进程" class="headerlink" title="mac下查找端口是否占用及关闭占用端口进程"></a>mac下查找端口是否占用及关闭占用端口进程</h4><h5 id="netstat命令"><a href="#netstat命令" class="headerlink" title="netstat命令"></a>netstat命令</h5><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -an <span class="string">| grep 8002</span></span><br></pre></td></tr></table></figure>
+<p>8002替换成需要grep的端口号</p>
+<h5 id="lsof命令"><a href="#lsof命令" class="headerlink" title="lsof命令"></a>lsof命令</h5><p>通过list open file命令可以查看到当前打开文件，在linux/mac中所有事物都是以文件形式存在，包括网络连接及硬件设备。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsof -<span class="selector-tag">i</span>:<span class="number">8002</span></span><br></pre></td></tr></table></figure>
 <p>-i参数表示网络链接，:8002指明端口号，该命令会同时列出PID，方便kill</p>
 <p>可以看到一个node进程占用了 8002 端口.<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">COMMAND  PID      <span class="keyword">USER</span>   <span class="title">FD</span>   <span class="keyword">TYPE</span>             DEVICE SIZE/OFF <span class="keyword">NODE</span> <span class="title">NAME</span></span><br><span class="line"><span class="keyword">node</span>    <span class="title">5079</span>  username   <span class="number">11</span>u  IPv6 <span class="number">0</span>xd814d01705d95c59      <span class="number">0</span>t0  TCP *:teradataordbms (LISTEN)</span><br></pre></td></tr></table></figure></p>
 <p>如何关闭此进程:</p>
-<p><code>kill -9 8002</code></p>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 8002</span><br></pre></td></tr></table></figure>
           
         
       

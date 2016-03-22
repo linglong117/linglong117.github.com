@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mbyte.cc/"/>
-  <updated>2016-03-22T10:17:36.000Z</updated>
+  <updated>2016-03-22T10:19:24.000Z</updated>
   <id>http://mbyte.cc/</id>
   
   <author>
@@ -20,14 +20,16 @@
     <link href="http://mbyte.cc/2016/03/22/MAC-COLSE-PORT/"/>
     <id>http://mbyte.cc/2016/03/22/MAC-COLSE-PORT/</id>
     <published>2016-03-22T10:04:09.000Z</published>
-    <updated>2016-03-22T10:17:36.000Z</updated>
+    <updated>2016-03-22T10:19:24.000Z</updated>
     
-    <content type="html">&lt;h4 id=&quot;mac下查找端口是否占用及关闭占用端口进程&quot;&gt;&lt;a href=&quot;#mac下查找端口是否占用及关闭占用端口进程&quot; class=&quot;headerlink&quot; title=&quot;mac下查找端口是否占用及关闭占用端口进程&quot;&gt;&lt;/a&gt;mac下查找端口是否占用及关闭占用端口进程&lt;/h4&gt;&lt;h5 id=&quot;netstat命令&quot;&gt;&lt;a href=&quot;#netstat命令&quot; class=&quot;headerlink&quot; title=&quot;netstat命令&quot;&gt;&lt;/a&gt;netstat命令&lt;/h5&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;-an | grep 8002```&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;8002替换成需要grep的端口号&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;##### lsof命令&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;通过list open file命令可以查看到当前打开文件，在linux/mac中所有事物都是以文件形式存在，包括网络连接及硬件设备。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```lsof -i:8002&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    <content type="html">&lt;h4 id=&quot;mac下查找端口是否占用及关闭占用端口进程&quot;&gt;&lt;a href=&quot;#mac下查找端口是否占用及关闭占用端口进程&quot; class=&quot;headerlink&quot; title=&quot;mac下查找端口是否占用及关闭占用端口进程&quot;&gt;&lt;/a&gt;mac下查找端口是否占用及关闭占用端口进程&lt;/h4&gt;&lt;h5 id=&quot;netstat命令&quot;&gt;&lt;a href=&quot;#netstat命令&quot; class=&quot;headerlink&quot; title=&quot;netstat命令&quot;&gt;&lt;/a&gt;netstat命令&lt;/h5&gt;&lt;figure class=&quot;highlight 1c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;netstat -an &lt;span class=&quot;string&quot;&gt;| grep 8002&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;8002替换成需要grep的端口号&lt;/p&gt;
+&lt;h5 id=&quot;lsof命令&quot;&gt;&lt;a href=&quot;#lsof命令&quot; class=&quot;headerlink&quot; title=&quot;lsof命令&quot;&gt;&lt;/a&gt;lsof命令&lt;/h5&gt;&lt;p&gt;通过list open file命令可以查看到当前打开文件，在linux/mac中所有事物都是以文件形式存在，包括网络连接及硬件设备。&lt;/p&gt;
+&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;lsof -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;8002&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;-i参数表示网络链接，:8002指明端口号，该命令会同时列出PID，方便kill&lt;/p&gt;
 &lt;p&gt;可以看到一个node进程占用了 8002 端口.&lt;br&gt;&lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;COMMAND  PID      &lt;span class=&quot;keyword&quot;&gt;USER&lt;/span&gt;   &lt;span class=&quot;title&quot;&gt;FD&lt;/span&gt;   &lt;span class=&quot;keyword&quot;&gt;TYPE&lt;/span&gt;             DEVICE SIZE/OFF &lt;span class=&quot;keyword&quot;&gt;NODE&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;NAME&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;node&lt;/span&gt;    &lt;span class=&quot;title&quot;&gt;5079&lt;/span&gt;  username   &lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;u  IPv6 &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;xd814d01705d95c59      &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;t0  TCP *:teradataordbms (LISTEN)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;如何关闭此进程:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;kill -9 8002&lt;/code&gt;&lt;/p&gt;
-</content>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;kill&lt;/span&gt; -9 8002&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
     
     <summary type="html">
     
