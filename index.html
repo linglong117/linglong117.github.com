@@ -278,7 +278,7 @@
 <p>-i参数表示网络链接，:8002指明端口号，该命令会同时列出PID，方便kill</p>
 <p>可以看到一个node进程占用了 8002 端口.<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">COMMAND  PID      <span class="keyword">USER</span>   <span class="title">FD</span>   <span class="keyword">TYPE</span>             DEVICE SIZE/OFF <span class="keyword">NODE</span> <span class="title">NAME</span></span><br><span class="line"><span class="keyword">node</span>    <span class="title">5079</span>  username   <span class="number">11</span>u  IPv6 <span class="number">0</span>xd814d01705d95c59      <span class="number">0</span>t0  TCP *:teradataordbms (LISTEN)</span><br></pre></td></tr></table></figure></p>
 <p>如何关闭此进程:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 8002</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 5079</span><br></pre></td></tr></table></figure>
           
         
       

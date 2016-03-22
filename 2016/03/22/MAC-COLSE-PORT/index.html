@@ -73,7 +73,7 @@ lsof命令通过list open file命令可以查看到当前打开文件，在linux
 lsof命令通过list open file命令可以查看到当前打开文件，在linux/mac中所有事物都是以文件形式存在，包括网络连接及硬件设备。
 1lsof -i:8002
 -i参数表示网络链接，:8002指明端口号，该命令会同时列出PID，方便kil">
-<meta property="og:updated_time" content="2016-03-22T10:19:24.000Z">
+<meta property="og:updated_time" content="2016-03-22T10:21:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mac下查找端口是否占用及关闭占用端口进程">
 <meta name="twitter:description" content="mac下查找端口是否占用及关闭占用端口进程netstat命令1netstat -an | grep 8002
@@ -284,7 +284,7 @@ lsof命令通过list open file命令可以查看到当前打开文件，在linux
 <p>-i参数表示网络链接，:8002指明端口号，该命令会同时列出PID，方便kill</p>
 <p>可以看到一个node进程占用了 8002 端口.<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">COMMAND  PID      <span class="keyword">USER</span>   <span class="title">FD</span>   <span class="keyword">TYPE</span>             DEVICE SIZE/OFF <span class="keyword">NODE</span> <span class="title">NAME</span></span><br><span class="line"><span class="keyword">node</span>    <span class="title">5079</span>  username   <span class="number">11</span>u  IPv6 <span class="number">0</span>xd814d01705d95c59      <span class="number">0</span>t0  TCP *:teradataordbms (LISTEN)</span><br></pre></td></tr></table></figure></p>
 <p>如何关闭此进程:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 8002</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 5079</span><br></pre></td></tr></table></figure>
       
     </div>
 
