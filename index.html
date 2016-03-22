@@ -228,6 +228,99 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/22/MAC-COLSE-PORT/" itemprop="url">
+                  mac下查找端口是否占用及关闭占用端口进程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-22T18:04:09+08:00" content="2016-03-22">
+              2016-03-22
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="mac下查找端口是否占用及关闭占用端口进程"><a href="#mac下查找端口是否占用及关闭占用端口进程" class="headerlink" title="mac下查找端口是否占用及关闭占用端口进程"></a>mac下查找端口是否占用及关闭占用端口进程</h4><h5 id="netstat命令"><a href="#netstat命令" class="headerlink" title="netstat命令"></a>netstat命令</h5><figure class="highlight plain"><figcaption><span>-an | grep 8002```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">8002替换成需要grep的端口号</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">##### lsof命令</span><br><span class="line">通过list open file命令可以查看到当前打开文件，在linux/mac中所有事物都是以文件形式存在，包括网络连接及硬件设备。</span><br><span class="line"></span><br><span class="line">```lsof -i:8002</span><br></pre></td></tr></table></figure>
+<p>-i参数表示网络链接，:8002指明端口号，该命令会同时列出PID，方便kill</p>
+<p>可以看到一个node进程占用了 8002 端口.<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">COMMAND  PID      <span class="keyword">USER</span>   <span class="title">FD</span>   <span class="keyword">TYPE</span>             DEVICE SIZE/OFF <span class="keyword">NODE</span> <span class="title">NAME</span></span><br><span class="line"><span class="keyword">node</span>    <span class="title">5079</span>  username   <span class="number">11</span>u  IPv6 <span class="number">0</span>xd814d01705d95c59      <span class="number">0</span>t0  TCP *:teradataordbms (LISTEN)</span><br></pre></td></tr></table></figure></p>
+<p>如何关闭此进程:</p>
+<p><code>kill -9 8002</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/15/npm-not-package-json/" itemprop="url">
                   npm-not-package.json
                 </a>
@@ -1038,7 +1131,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
