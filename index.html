@@ -228,6 +228,99 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/13/AngularJs-controller-communicate/" itemprop="url">
+                  AngularJs controller之间的通信$broadcast-$on多次被调用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T17:51:39+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>controller之前可以通过事件通信，最近的项目中是通过$rootScope绑定和监听事件，如：</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">// controller A:</span><br><span class="line">...</span><br><span class="line">$rootScope.$emit(<span class="string">'eventC'</span>, eventData)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">// controller B:</span><br><span class="line">$rootScope.$on(<span class="string">'eventC'</span>, <span class="keyword">function</span>() &#123;...&#125;);</span><br></pre></td></tr></table></figure>
+<p>开始的时候页面比较少，没有发现问题，后来使用了ngRoute，发现当controller B绑定的页面打开几次后，会同时触发多次eventC，原因就是$rootScope的生命周期是跟随整个app的，而不是某个controller，其绑定的事件当然也不会随某一个controller的销毁而销毁。。。然后controller B被多次调用后$rootScope就被绑定了多个重复的事件</p>
+<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><p>理解了scope的生命周期就好办了，controller B销毁时其scope绑定的事件也会跟着销毁，所以只要把事件绑定到controller B自己的scope上就可以了</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">// controller A:</span><br><span class="line">...</span><br><span class="line">$rootScope.$broadcast(<span class="string">'eventC'</span>, eventData)</span><br><span class="line">// 注意这里是`$broadcast`而不是`$emit`</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">// controller B:</span><br><span class="line">...</span><br><span class="line">$scope.$on(<span class="string">'eventC'</span>, <span class="keyword">function</span>() &#123;...&#125;);</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/22/MAC-COLSE-PORT/" itemprop="url">
                   mac下查找端口是否占用及关闭占用端口进程
                 </a>
@@ -1133,7 +1226,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

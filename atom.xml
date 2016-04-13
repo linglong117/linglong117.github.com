@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mbyte.cc/"/>
-  <updated>2016-03-22T10:21:40.000Z</updated>
+  <updated>2016-04-13T10:04:02.000Z</updated>
   <id>http://mbyte.cc/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AngularJs controller之间的通信$broadcast-$on多次被调用</title>
+    <link href="http://mbyte.cc/2016/04/13/AngularJs-controller-communicate/"/>
+    <id>http://mbyte.cc/2016/04/13/AngularJs-controller-communicate/</id>
+    <published>2016-04-13T09:51:39.000Z</published>
+    <updated>2016-04-13T10:04:02.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h4&gt;&lt;p&gt;controller之前可以通过事件通信，最近的项目中是通过$rootScope绑定和监听事件，如：&lt;/p&gt;
+&lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// controller A:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$rootScope.$emit(&lt;span class=&quot;string&quot;&gt;&#39;eventC&#39;&lt;/span&gt;, eventData)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// controller B:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$rootScope.$on(&lt;span class=&quot;string&quot;&gt;&#39;eventC&#39;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;() &amp;#123;...&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;开始的时候页面比较少，没有发现问题，后来使用了ngRoute，发现当controller B绑定的页面打开几次后，会同时触发多次eventC，原因就是$rootScope的生命周期是跟随整个app的，而不是某个controller，其绑定的事件当然也不会随某一个controller的销毁而销毁。。。然后controller B被多次调用后$rootScope就被绑定了多个重复的事件&lt;/p&gt;
+&lt;h4 id=&quot;解决方案：&quot;&gt;&lt;a href=&quot;#解决方案：&quot; class=&quot;headerlink&quot; title=&quot;解决方案：&quot;&gt;&lt;/a&gt;解决方案：&lt;/h4&gt;&lt;p&gt;理解了scope的生命周期就好办了，controller B销毁时其scope绑定的事件也会跟着销毁，所以只要把事件绑定到controller B自己的scope上就可以了&lt;/p&gt;
+&lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// controller A:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$rootScope.$broadcast(&lt;span class=&quot;string&quot;&gt;&#39;eventC&#39;&lt;/span&gt;, eventData)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// 注意这里是`$broadcast`而不是`$emit`&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// controller B:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$scope.$on(&lt;span class=&quot;string&quot;&gt;&#39;eventC&#39;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;() &amp;#123;...&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h4&gt;&lt;p&gt;controller之前可以通过事件通信，最近的项目中是通过$rootScope绑定和监听事件，如：&lt;/p&gt;
+&lt;figure class=&quot;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>mac下查找端口是否占用及关闭占用端口进程</title>
